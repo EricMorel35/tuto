@@ -27,9 +27,6 @@ public class AppConfiguration {
     }
 
     private List<HttpMessageConverter<?>> messageConverters() {
-        // MappingJackson2HttpMessageConverter
-        // Jaxb2RootElementHttpMessageConverter
-
         List<HttpMessageConverter<?>> messageConverters = new ArrayList<HttpMessageConverter<?>>();
         messageConverters.add(new MappingJackson2HttpMessageConverter());
         messageConverters.add(new Jaxb2RootElementHttpMessageConverter());
