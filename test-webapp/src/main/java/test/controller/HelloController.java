@@ -1,5 +1,6 @@
 package test.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -15,12 +16,16 @@ import test.model.Movie;
 @Controller
 public class HelloController {
 
+	@Autowired
+	private HelloService h;
+
 	@RequestMapping("/test")
 	@ResponseBody
 	public Movie test() {
 		Movie movie = new Movie();
 		movie.setId(1L);
 		movie.setMovieName("Iron Man");
+		h.insertMovie("Iron Man");
 		return movie;
 	}
 
