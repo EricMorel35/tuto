@@ -5,7 +5,7 @@
 	<artifactId>test-webapp</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>test-webapp Maven Webapp modifié par admin5</name>
+	<name>test-webapp Maven Webapp modifié par admin6</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<servlet.version>3.0.1</servlet.version>
