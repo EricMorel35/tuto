@@ -35,9 +35,7 @@
 		</property>
 	</bean>
 
-	<jaxws:server serviceClass="com.xtt.webapp.CityService"
-		address="/city" serviceBean="#city">
-	</jaxws:server>
+	<jaxws:server serviceClass="com.xtt.webapp.CityService" address="/city" serviceBean="#city" />
 
 	<bean id="city" class="com.xtt.webapp.impl.CityServiceImpl">
 		<property name="restTemplate" ref="restTemplate" />
