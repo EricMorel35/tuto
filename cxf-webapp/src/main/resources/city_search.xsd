@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	
-	<xs:complexType name="ville">
-		<xs:sequence>
-			<xs:element name="name" type="xs:string" />
-			<xs:element name="cp" type="xs:string" />
-		</xs:sequence>
-	</xs:complexType>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
 
-	<xs:element name="urlset">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="ville" type="ville" maxOccurs="unbounded" />
-			</xs:sequence>
-			<xs:attribute name="nbr" type="xs:int" use="required" />
-		</xs:complexType>
-	</xs:element>
-</xs:schema>
+    <xsd:element name="getCityRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="zipCode" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="getCityResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="cities" type="xsd:string" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
