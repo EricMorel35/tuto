@@ -19,6 +19,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
+	<scm>
+		<connection>scm:git:https://github.com/EricMorel35/tuto.git</connection>
+	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
