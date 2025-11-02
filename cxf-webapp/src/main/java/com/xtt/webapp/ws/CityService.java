@@ -1,4 +1,4 @@
-package com.xtt.webapp.impl;
+package com.xtt.webapp.ws;
 
 import java.util.List;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
